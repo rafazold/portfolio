@@ -1,0 +1,57 @@
+.initials-square {
+  width: 77px;
+  height: 77px;
+  object-fit: contain;
+  background-color: black;
+  margin-left: 10%;
+  //background-color: var(--black);
+}
+
+.Header {
+  position: absolute;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  //padding: 0 12vw
+}
+
+.initials {
+  display: block;
+  width: 55px;
+  height: 55px;
+  font-family: Roboto;
+  font-size: 42px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.31;
+  letter-spacing: normal;
+  text-align: left;
+  color: white;
+  margin: 13px 11px;
+}
+
+.download-cv {
+  width: 260px;
+  height: 62px;
+  box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.16);
+  background-color: black;
+  border-radius: 30px;
+  top: 20px;
+  bottom: 0;
+  color: white;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.3;
+  letter-spacing: normal;
+  text-align: left;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 10%;
+}

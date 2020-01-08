@@ -1,0 +1,58 @@
+.curved-arrow {
+  position: absolute;
+  top: 11%;
+  right: 16%;
+}
+
+.profile-picture {
+  position: absolute;
+  top: 164px;
+  left: calc(50% - 95px);
+  width: 189px;
+  height: 189px;
+
+  border-radius: 50%;
+}
+
+.homepage-title {
+  font-family: Roboto;
+  font-size: 120px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  margin-top: 350px;
+  color: white;
+  margin-bottom: 0;
+}
+
+.homepage-summary {
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.3;
+  letter-spacing: normal;
+  text-align: center;
+  color: white;
+  max-width: 70%;
+  margin-left: 15%;
+  margin-top: -13px;
+}
+
+.projects-link {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.next-page {
+
+  width: 100%;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
