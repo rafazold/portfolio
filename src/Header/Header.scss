@@ -1,6 +1,6 @@
 .initials-square {
-  width: 77px;
-  height: 77px;
+  width: 74px;
+  height: 74px;
   object-fit: contain;
   background-color: black;
   margin-left: 10%;
@@ -30,12 +30,15 @@
   letter-spacing: normal;
   text-align: left;
   color: white;
-  margin: 13px 11px;
+  margin: 12px 11px;
 }
 
 .download-cv {
-  width: 260px;
-  height: 62px;
+  width: 225px;
+  padding: 0 15px;
+  height: 54px;
+  z-index: 10;
+  text-decoration: none;
   box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.16);
   background-color: black;
   border-radius: 30px;
@@ -53,5 +56,6 @@
   position: relative;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin-right: 10%;
 }

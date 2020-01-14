@@ -12,12 +12,9 @@ function App() {
   return (
       <Router>
           <div className="App">
-              {/*<img src="./assets/530.png"*/}
-              {/*     className="layer"/>*/}
               <Header/>
               <main className="container">
                   <Switch>
-                      {/*here we can add aditional paths*/}
                       <Route path="/" component={Homepage}/>
                   </Switch>
               </main>

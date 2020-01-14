@@ -1,8 +1,44 @@
 .project-wrapper {
-  width: 825px;
-  height: 600px;
+  min-width: 34%;
+  height: auto;
+  margin-bottom: 3%;
+
   .project-image {
-    width: 825px;
-    height: 600px;
+    width: 500px;
+    height: auto;
+    border-radius: 13px;
+    border: solid 8px #363538;
   }
+
+  .project-footer {
+    display: flex;
+    justify-content: space-between;
+
+    .project-name {
+      color: white;
+      font-size: 27px;
+    }
+
+    .project-button {
+      background-color: transparent;
+      color: white;
+      border-radius: 13px;
+      font-size: 12px;
+      padding: 4px 7px;
+      border: solid 1px white;
+      cursor: pointer;
+      .button-arrow {
+        margin-left: 6px;
+      }
+    }
+  }
+}
+
+.projects {
+  top: 160px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 10%;
+  justify-content: space-around;
 }

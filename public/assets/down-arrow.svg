@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="down-arrow" width="23.362" height="23.362" viewBox="0 0 23.362 23.362">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}
+        </style>
+    </defs>
+    <path id="Path_1" d="M88.067 18.356l7.509-7.509-2.5-2.5-3.337 3.337V0H86.4v11.681l-3.339-3.337-2.5 2.5z" class="cls-1" data-name="Path 1" transform="translate(-76.386)"/>
+    <path id="Path_2" d="M0 386.667h23.362V390H0z" class="cls-1" data-name="Path 2" transform="translate(0 -366.642)"/>
+</svg>
