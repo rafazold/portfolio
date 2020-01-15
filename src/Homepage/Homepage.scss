@@ -4,6 +4,10 @@
 
 @include media-breakpoint-down(sm) {
 
+  .hp-background-wave {
+    top: 37em;
+  }
+
   .curved-arrow {
     top: 1%;
     right: 25%;
@@ -71,6 +75,10 @@
   }
 
 @include media-breakpoint-up(md) {
+
+  .hp-background-wave {
+    top: 50em;
+  }
 
   .curved-arrow {
     top: 10%;
@@ -198,7 +206,6 @@
 
 .hp-background-wave {
   position: absolute;
-  top: 85%;
   width: 100%;
   object-fit: contain;
   opacity: 0.97;

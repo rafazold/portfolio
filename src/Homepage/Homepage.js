@@ -11,7 +11,7 @@ class Homepage extends Component {
             <div className="Homepage">
                 <div className="hp-background">
                     <img className="hp-background-image" src="/assets/530.png" alt="background"/>
-                    <img className="hp-background-wave" src="/assets/wave-hp.svg" alt="wave"/>
+                    <img className="hp-background-wave" src="/assets/wave-hp2.svg" alt="wave"/>
                 </div>
                 <CurvedArrow />
                 <img className="profile-picture" src="./assets/rafa.png" alt="avatar"/>
