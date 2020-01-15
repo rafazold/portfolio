@@ -40,6 +40,10 @@
     margin-top: 2em;
   }
 
+  .homepage-footer {
+    top: 5em;
+  }
+
   .footer-text {
     font-size: 3em;
   }
@@ -99,6 +103,9 @@
     margin-top: 5em;
   }
 
+  .homepage-footer {
+    top: 12em;
+  }
   .footer-text {
     font-size: 7.5em;
   }
@@ -174,7 +181,6 @@
 
 .homepage-footer {
   position: relative;
-  top: 250px;
 
   .footer-text {
     font-family: Roboto;

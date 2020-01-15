@@ -3,12 +3,18 @@
 @import "~bootstrap/scss/mixins/_breakpoints";
 
 @include media-breakpoint-down(sm) {
+  .projects {
+    top: 2em;
+  }
   .project-image {
     width: 17em;
   }
 }
 
 @include media-breakpoint-up(md) {
+  .projects {
+    top: 10em;
+  }
   .project-image {
     width: 500px;
   }
@@ -56,10 +62,9 @@
 }
 
 .projects {
-  top: 160px;
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 10%;
+  margin: 10px 10%;
   justify-content: space-around;
 }
