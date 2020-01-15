@@ -1,6 +1,29 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins/_breakpoints";
+
+@include media-breakpoint-down(sm) {
+  .skills {
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .skill-wrapper {
+    margin-bottom: 1em;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .skills {
+    max-width: 40%;
+    margin-left: 30%;
+    justify-content: space-between;
+  }
+}
+
+
 .skills {
   display: flex;
-  justify-content: space-between;
-  max-width: 40%;
-  margin-left: 30%;
+  flex-wrap: wrap;
 }

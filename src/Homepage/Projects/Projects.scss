@@ -1,10 +1,30 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins/_breakpoints";
+
+@include media-breakpoint-down(sm) {
+  .project-image {
+    width: 17em;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .project-image {
+    width: 500px;
+  }
+
+  .project-wrapper {
+    min-width: 34%;
+  }
+}
+
+
 .project-wrapper {
   min-width: 34%;
   height: auto;
   margin-bottom: 3%;
 
   .project-image {
-    width: 500px;
     height: auto;
     border-radius: 13px;
     border: solid 8px #363538;
@@ -27,6 +47,7 @@
       padding: 4px 7px;
       border: solid 1px white;
       cursor: pointer;
+      outline:none;
       .button-arrow {
         margin-left: 6px;
       }

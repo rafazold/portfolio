@@ -7,7 +7,7 @@ class Tags extends Component {
         return (
             <div className="skills">
                 {this.props.skills.map(skill => {
-                    return <span key={Math.random().toString(36).substring(2, 15)}>
+                    return <span key={Math.random().toString(36).substring(2, 15)} className="skill-wrapper">
                         <Tag>
                             {skill}
                         </Tag>

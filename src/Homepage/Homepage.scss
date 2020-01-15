@@ -1,25 +1,138 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins/_breakpoints";
+
+@include media-breakpoint-down(sm) {
+
+  .curved-arrow {
+    top: 5%;
+    right: 14%;
+    width: 10%;
+  }
+
+  .profile-picture {
+    width: 6em;
+    height: 6em;
+    left: calc(50% - 47px);
+  }
+
+  .homepage-middle-text {
+    margin-top: 50%;
+  }
+
+  .homepage-title {
+    font-size: 80px;
+  }
+
+  .homepage-summary {
+    font-size: 18px;
+    max-width: 90%;
+    margin-left: 5%;
+
+    .text-break {
+      display: none;
+    }
+  }
+
+  .next-page {
+    margin-top: 3em;
+  }
+
+  .footer-text {
+    font-size: 3em;
+  }
+
+  .footer-top-text {
+    margin-left: calc(50% - 2.5em);
+  }
+  .footer-bottom-text {
+    position: absolute;
+    right: 2%;
+  }
+
+  .footer-contact {
+    margin-top: 15%;
+    margin-left: calc(50% - 70px);
+
+    .phone{
+      margin-right: 65px;
+    }
+
+    .phone-img, .mail-img {
+      height: 55px;
+    }
+  }
+  }
+
+@include media-breakpoint-up(md) {
+
+  .curved-arrow {
+    top: 10%;
+    right: 12%;
+    width: 15%;
+  }
+
+  .profile-picture {
+    width: 12em;
+    height: 12em;
+    left: calc(50% - 95px);
+  }
+
+  .homepage-middle-text {
+    margin-top: 20%;
+
+    .homepage-title {
+      font-size: 120px;
+    }
+
+    .homepage-summary {
+      font-size: 30px;
+      max-width: 70%;
+      margin-left: 15%;
+    }
+  }
+
+  .next-page {
+    margin-top: 5em;
+  }
+
+  .footer-text {
+    font-size: 7.5em;
+  }
+
+  .footer-top-text {
+    margin-left: calc(50% - 298px);
+  }
+  .footer-bottom-text {
+    margin-left: calc(50% - 40px);
+  }
+
+  .footer-contact {
+    margin-left: calc(50% - 138px);
+    margin-top: 55px;
+
+    .phone{
+      margin-right: 100px;
+    }
+
+  }
+
+}
+
 .curved-arrow {
   position: absolute;
-  top: 11%;
-  right: 16%;
   fill: #ffffff
 }
 
 .profile-picture {
   position: absolute;
   top: 130px;
-  left: calc(50% - 95px);
-  width: 189px;
-  height: 189px;
 
   border-radius: 50%;
 }
-.homepage-middle-text {
-  margin-top: 310px
-}
+
 .homepage-title {
   font-family: Roboto;
-  font-size: 120px;
   font-weight: 900;
   font-stretch: normal;
   font-style: normal;
@@ -32,7 +145,6 @@
 
 .homepage-summary {
   font-family: Roboto;
-  font-size: 30px;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
@@ -40,8 +152,6 @@
   letter-spacing: normal;
   text-align: center;
   color: white;
-  max-width: 70%;
-  margin-left: 15%;
   margin-top: -13px;
 }
 
@@ -55,7 +165,6 @@
 .next-page {
   position: relative;
   width: 100%;
-  margin-top: 135px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,7 +177,6 @@
 
   .footer-text {
     font-family: Roboto;
-    font-size: 120px;
     color: white;
     font-weight: 900;
     font-stretch: normal;
@@ -77,18 +185,8 @@
     letter-spacing: normal;
   }
 
-  .footer-top-text {
-    margin-left: calc(50% - 298px);
-  }
-  .footer-bottom-text {
-    margin-left: calc(50% - 40px);
-  }
-
   .footer-contact {
-  margin-left: calc(50% - 108px);
-    .phone{
-      margin-right: 40px;
-    }
+    position: absolute;
   }
 }
 
@@ -104,6 +202,5 @@
   position: absolute;
   right: 0;
   top: 0;
-  min-width: 100%;
-  min-height: 100%;
+  width: 100%;
 }

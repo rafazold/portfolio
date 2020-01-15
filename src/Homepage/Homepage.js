@@ -19,7 +19,7 @@ class Homepage extends Component {
                     <h1 className="homepage-title">Hello!</h1>
                     <p className="homepage-summary">My name is Rafael Zoldan, I’m a passionate, motivated and
                         resourceful Full-Stack developer.<br/>
-                        Responsible and hard working team player with great independent capabilities,<br/>
+                        Responsible and hard working team player with great independent capabilities,<br className="text-break"/>
                         quick learner, curious and thrilled by new challenges.</p>
                     <Tags skills={
                         [
@@ -49,8 +49,8 @@ class Homepage extends Component {
                     <span className="footer-text footer-top-text">Thank you!</span><br/>
                     <span className="footer-text footer-bottom-text">Let's talk...</span><br/>
                     <span className="footer-contact">
-                        <a className="phone" href="tel:+972542256204"><img src="/assets/phone.svg" alt="phone"/></a>
-                        <a className="mail" href="mailto:zoldan.rafael@gmail.com"><img src="/assets/mail.svg" alt="mail"/></a>
+                        <a className="phone" href="tel:+972542256204"><img className="phone-img" src="/assets/phone.svg" alt="phone"/></a>
+                        <a className="mail" href="mailto:zoldan.rafael@gmail.com"><img className="mail-img" src="/assets/mail.svg" alt="mail"/></a>
                     </span>
                 </section>
             </div>

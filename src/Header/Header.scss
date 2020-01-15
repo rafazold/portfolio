@@ -1,16 +1,77 @@
-.initials-square {
-  width: 74px;
-  height: 74px;
-  object-fit: contain;
-  background-color: black;
-  margin-left: 10%;
-  //background-color: var(--black);
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins/_breakpoints";
+
+@include media-breakpoint-down(sm) {
+
+  .Header {
+    height: 3em;
+  }
+
+  .initials-square {
+    width: 3em;
+    height: 3em;
+    object-fit: contain;
+    background-color: black;
+    margin-left: 5%;
+    //background-color: var(--black);
+  }
+
+  .initials {
+    font-size: 22px;
+  }
+
+  .download-cv {
+    width: 11em;
+    padding: 0 0.5em;
+    height: 2.5em;
+    font-size: 0.8em;
+    margin-right: 5%;
+  }
+
 }
+
+@include media-breakpoint-up(md) {
+
+  .Header {
+    height: 5em;
+  }
+
+  .initials-square {
+    width: 4.5em;
+    height: 5em;
+    object-fit: contain;
+    background-color: black;
+    margin-left: 10%;
+    //background-color: var(--black);
+  }
+
+  .initials {
+    font-size: 42px;
+  }
+
+  .download-cv {
+    width: 11em;
+    padding: 0 0.5em;
+    height: 2.5em;
+    font-size: 1.25em;
+    margin-right: 10%;
+  }
+
+}
+
+//.initials-square {
+//  width: 74px;
+//  height: 74px;
+//  object-fit: contain;
+//  background-color: black;
+//  margin-left: 10%;
+//  //background-color: var(--black);
+//}
 
 .Header {
   position: absolute;
   top: 0;
-  height: 80px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -19,10 +80,7 @@
 
 .initials {
   display: block;
-  width: 55px;
-  height: 55px;
   font-family: Roboto;
-  font-size: 42px;
   font-weight: 900;
   font-stretch: normal;
   font-style: normal;
@@ -34,19 +92,15 @@
 }
 
 .download-cv {
-  width: 225px;
-  padding: 0 15px;
-  height: 54px;
   z-index: 10;
   text-decoration: none;
   box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.16);
   background-color: black;
   border-radius: 30px;
-  top: 20px;
+  top: 34%;
   bottom: 0;
   color: white;
   font-family: Roboto;
-  font-size: 20px;
   font-weight: 900;
   font-stretch: normal;
   font-style: normal;
@@ -57,5 +111,4 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-right: 10%;
-}
+  }
