@@ -4,9 +4,9 @@
 
 @include media-breakpoint-down(sm) {
   .skills {
-    max-width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    max-width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
   }
 
   .skill-wrapper {
@@ -26,4 +26,6 @@
 .skills {
   display: flex;
   flex-wrap: wrap;
+  z-index: 2;
+  justify-content: center;
 }
