@@ -14,7 +14,9 @@ class Homepage extends Component {
                     <img className="hp-background-wave" src="/assets/wave-hp2.svg" alt="wave"/>
                 </div>
                 <CurvedArrow />
-                <img className="profile-picture" src="./assets/rafa.png" alt="avatar"/>
+                <div className="profile-picture-wrapper">
+                    <img className="profile-picture" src="./assets/rafa.png" alt="avatar"/>
+                </div>
                 <div className="homepage-middle-text">
                     <h1 className="homepage-title">Hello!</h1>
                     <p className="homepage-summary">My name is Rafael Zoldan, I’m a passionate, motivated and
