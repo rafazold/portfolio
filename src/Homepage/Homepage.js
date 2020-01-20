@@ -41,8 +41,7 @@ class Homepage extends Component {
                         className="projects-link"
                         to="#projects"
                         scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}
-                    >Projects</HashLink>
-                    <img className="down-arrow" src="./assets/download.svg" alt="arrow"/>
+                    >Projects<img className="down-arrow" src="./assets/download.svg" alt="arrow"/></HashLink>
                 </div>
                 <Projects />
                 <section className="homepage-footer">

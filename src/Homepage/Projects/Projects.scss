@@ -9,6 +9,12 @@
   .project-image {
     width: 17em;
   }
+  .project-button {
+    padding: 5px 10px;
+  }
+  .project-footer {
+    padding: 7px 13px;
+  }
 }
 
 @include media-breakpoint-up(md) {
@@ -17,22 +23,27 @@
     margin: 10px 10%;
   }
   .project-image {
-    width: 500px;
+    height: 51vh;
   }
 
   .project-wrapper {
     min-width: 34%;
+  }
+  .project-button {
+    padding: 8px 15px;
+  }
+  .project-footer {
+    padding: 10px 30px;
   }
 }
 
 
 .project-wrapper {
   min-width: 34%;
-  height: auto;
+  width: auto;
   margin-bottom: 3%;
 
   .project-image {
-    height: auto;
     border-radius: 13px;
     border: solid 8px #363538;
   }
@@ -50,8 +61,7 @@
       background-color: transparent;
       color: white;
       border-radius: 13px;
-      font-size: 12px;
-      padding: 4px 7px;
+      font-size: 13px;
       border: solid 1px white;
       cursor: pointer;
       outline:none;
