@@ -33,7 +33,7 @@
     padding: 8px 15px;
   }
   .project-footer {
-    padding: 10px 30px;
+    padding: 10px 2%;
   }
 }
 
@@ -42,6 +42,7 @@
   min-width: 34%;
   width: auto;
   margin-bottom: 3%;
+  position: relative;
 
   .project-image {
     border-radius: 13px;
@@ -73,7 +74,6 @@
 }
 
 .projects {
-  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;

@@ -9,8 +9,9 @@
   }
 
   .curved-arrow {
-    top: 1%;
-    right: 25%;
+    position: absolute;
+    margin-left: calc(83% - 56px);
+    top: 3%;
     width: 10%;
   }
 
@@ -18,15 +19,19 @@
     width: 6em;
     height: 6em;
     top: 11%;
-    left: calc(50% - 47px);
+  }
+
+  .profile-picture-wrapper {
+    margin-top: 5em;
   }
 
   .homepage-middle-text {
-    margin-top: 46%;
+
   }
 
   .homepage-title {
     font-size: 74px;
+    margin-top: 0;
   }
 
   .homepage-summary {
@@ -81,9 +86,11 @@
   }
 
   .curved-arrow {
-    top: 10%;
-    right: 12%;
+    position: absolute;
+    top: 6em;
+    right: 19%;
     width: 15%;
+    margin-left: calc(80% - 130px);
   }
 
   .profile-picture {
@@ -93,11 +100,16 @@
     left: calc(50% - 95px);
   }
 
+  .profile-picture-wrapper {
+    margin-top: 8em;
+    margin-bottom: 3em;
+  }
+
   .homepage-middle-text {
-    margin-top: 20%;
 
     .homepage-title {
       font-size: 120px;
+      margin-top: -0.4em;
     }
 
     .homepage-summary {
@@ -138,13 +150,15 @@
 }
 
 .curved-arrow {
-  position: absolute;
   fill: #ffffff
 }
 
 .profile-picture {
-  position: absolute;
   border-radius: 50%;
+}
+
+.profile-picture-wrapper {
+  position: relative;
 }
 
 .homepage-title {
@@ -191,7 +205,7 @@
 }
 
 .homepage-footer {
-  position: relative;
+  //position: relative;
 
   .footer-text {
     font-family: Roboto;
@@ -221,3 +235,12 @@
   top: 0;
   width: 100%;
 }
+
+.profile-picture-wrapper {
+  text-align: center;
+  position: relative;
+}
+
+//.profile-picture {
+//  display: none;
+//}
