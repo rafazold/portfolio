@@ -24,7 +24,13 @@ class Projects extends Component {
             <div className="projects" id="projects">
                 {projects.map(project => {
                     return <article className="project-wrapper" key={Math.random().toString(36).substring(2, 15)}>
-                        <img className="project-image" src={project.image} alt="project"/>
+                        <a href={project.url} target="_blank" rel="noopener noreferrer">
+                            <img
+                            className="project-image"
+                            src={project.image}
+                            alt="project"
+                            />
+                        </a>
                         <div className="project-footer">
                             <span className="project-name">{project.name}</span>
                             <a href={project.url} target="_blank"rel="noopener noreferrer" >

@@ -5,7 +5,7 @@
 @include media-breakpoint-down(sm) {
 
   .hp-background-wave {
-    top: 37em;
+    top: 35em;
   }
 
   .curved-arrow {
@@ -17,57 +17,68 @@
 
   .profile-picture {
     width: 6em;
-    height: 6em;
+    height: auto;
     top: 11%;
   }
 
   .profile-picture-wrapper {
     margin-top: 5em;
+    width: 6em;
+    height: 6em;
   }
 
   .homepage-middle-text {
-
+    margin-top: 1em;
   }
 
   .homepage-title {
-    font-size: 74px;
+    font-size: 65px;
     margin-top: 0;
   }
 
   .homepage-summary {
-    font-size: 18px;
-    max-width: 98%;
-    margin-left: 1%;
+    font-size: 16px;
     margin-top: 0;
+    max-width: 98%;
 
     .text-break {
       display: none;
     }
   }
 
+  .projects-link {
+    font-size: 16px;
+  }
+
   .next-page {
     margin-top: 2em;
+    margin-bottom: 5em;
+
+    .down-arrow {
+      height: 0.8em;
+    }
   }
 
   .homepage-footer {
-    top: 5em;
+    margin-top: 5em;
+
+    .footer-top-text {
+      margin-left: 5%;
+    }
+
+    .footer-bottom-text {
+      text-align: right;
+      margin-right: 5%;
+    }
+
   }
 
   .footer-text {
     font-size: 3em;
   }
 
-  .footer-top-text {
-    margin-left: 0.5em;;
-  }
-  .footer-bottom-text {
-    position: absolute;
-    right: 0.5em;
-  }
-
   .footer-contact {
-    margin-top: 15%;
-    margin-left: calc(50% - 70px);
+    margin: 3em auto;
 
     .phone{
       margin-right: 65px;
@@ -88,21 +99,22 @@
   .curved-arrow {
     position: absolute;
     top: 6em;
-    right: 19%;
     width: 15%;
     margin-left: calc(80% - 130px);
   }
 
   .profile-picture {
     width: 12em;
-    height: 12em;
+    height: auto;
     top: 18%;
     left: calc(50% - 95px);
   }
 
   .profile-picture-wrapper {
-    margin-top: 8em;
-    margin-bottom: 3em;
+    margin-top: 10em;
+    margin-bottom: 4em;
+    width: 12em;
+    height: 12em;
   }
 
   .homepage-middle-text {
@@ -114,37 +126,39 @@
 
     .homepage-summary {
       font-size: 30px;
-      max-width: 70%;
-      margin-left: 15%;
+      margin-top: 0;
     }
   }
 
   .next-page {
-    margin-top: 5em;
+    margin-top: 6em;
+    margin-bottom: 14em;
+
+    .projects-link {
+      font-size: 20px;
+    }
   }
 
   .homepage-footer {
-    top: 12em;
-  }
-  .footer-text {
-    font-size: 7.5em;
-  }
+    margin-top: 8em;
+    text-align: center;
 
-  .footer-top-text {
-    margin-left: calc(50% - 298px);
-  }
-  .footer-bottom-text {
-    margin-left: calc(50% - 40px);
-  }
-
-  .footer-contact {
-    margin-left: calc(50% - 138px);
-    margin-top: 55px;
-
-    .phone{
-      margin-right: 100px;
+    .footer-text {
+      font-size: 7.5em;
     }
 
+    .footer-bottom-text {
+      margin-left: 25%;
+    }
+
+    .footer-contact {
+      margin: 5em auto;
+
+      .phone {
+        margin-right: 100px;
+      }
+
+    }
   }
 
 }
@@ -153,12 +167,12 @@
   fill: #ffffff
 }
 
-.profile-picture {
-  border-radius: 50%;
-}
-
 .profile-picture-wrapper {
+  margin-right: auto;
+  margin-left: auto;
   position: relative;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
 .homepage-title {
@@ -182,10 +196,11 @@
   letter-spacing: normal;
   text-align: center;
   color: white;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .projects-link {
-  font-size: 20px;
   color: white;
   margin-bottom: 10px;
   text-decoration: none;
@@ -205,7 +220,8 @@
 }
 
 .homepage-footer {
-  //position: relative;
+  display: flex;
+  flex-direction: column;
 
   .footer-text {
     font-family: Roboto;
@@ -217,9 +233,10 @@
     letter-spacing: normal;
   }
 
-  .footer-contact {
-    position: absolute;
+  .footer-bottom-text {
+    margin-left: 25%;
   }
+
 }
 
 .hp-background-wave {
@@ -236,11 +253,4 @@
   width: 100%;
 }
 
-.profile-picture-wrapper {
-  text-align: center;
-  position: relative;
-}
 
-//.profile-picture {
-//  display: none;
-//}

@@ -47,8 +47,8 @@ class Homepage extends Component {
                 </div>
                 <Projects />
                 <section className="homepage-footer">
-                    <span className="footer-text footer-top-text">Thank you!</span><br/>
-                    <span className="footer-text footer-bottom-text">Let's talk...</span><br/>
+                    <span className="footer-text footer-top-text">Thank you!</span>
+                    <span className="footer-text footer-bottom-text">Let's talk...</span>
                     <span className="footer-contact">
                         <a className="phone" href="tel:+972542256204"><img className="phone-img" src="/assets/phone.svg" alt="phone"/></a>
                         <a className="mail" href="mailto:zoldan.rafael@gmail.com"><img className="mail-img" src="/assets/mail.svg" alt="mail"/></a>

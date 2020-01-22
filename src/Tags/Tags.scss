@@ -17,8 +17,6 @@
 
 @include media-breakpoint-up(md) {
   .skills {
-    max-width: 60%;
-    margin-left: 20%;
     justify-content: center;
   }
 
@@ -31,7 +29,6 @@
 .skills {
   display: flex;
   flex-wrap: wrap;
-  position: relative;
 }
 
 .skill-wrapper {

@@ -5,21 +5,17 @@
 
 @include media-breakpoint-down(sm) {
   body {
-    background: linear-gradient(180deg, #36373a 41em, #292b2e 0%);
+    background: linear-gradient(180deg, #36373a 41%, #36373a 42%, #292b2e 42%, #292b2e 100%);
   }
 
   .container {
-    height: 83em;
+    //height: 83em;
   }
 }
 
 @include media-breakpoint-up(md) {
   body {
-  background: linear-gradient(180deg, rgba(54,55,58,1) 50%, rgba(54,55,58,1) 30%, rgba(41,43,46,1) 50%, rgba(41,43,46,1) 100%);
-  }
-
-  .container {
-    height: 120em;
+    background: linear-gradient(180deg, #36373a 21%, #36373a 39%, #292b2e 59%, #292b2e 100%);
   }
 }
 
