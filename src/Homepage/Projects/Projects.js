@@ -12,7 +12,7 @@ class Projects extends Component {
             {
                 image: 'assets/sentinel7.png',
                 name: 'Sentinel',
-                url: 'https://www.sentinel7.io'
+                url: 'https://sentinel-c19c8.web.app/'
             },
             // {
             //     image: 'assets/instag.png',

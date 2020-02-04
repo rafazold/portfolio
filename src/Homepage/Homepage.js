@@ -10,8 +10,12 @@ class Homepage extends Component {
         return (
             <div className="Homepage">
                 <div className="hp-background">
-                    <img className="hp-background-image" src="/assets/530.png" alt="background"/>
+                    <div className="hp-background-image-wrapper">
+                        <img className="hp-background-image"
+                                                                      src="/assets/530.png" alt="background"/>
+                    </div>
                     <img className="hp-background-wave" src="/assets/wave-hp2.svg" alt="wave"/>
+                    <div className="hp-background-endless"></div>
                 </div>
                 <CurvedArrow />
                 <div className="profile-picture-wrapper">

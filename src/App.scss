@@ -1,27 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/mixins/_breakpoints";
-
-@include media-breakpoint-down(sm) {
-  body {
-    background: linear-gradient(180deg, #36373a 41%, #36373a 42%, #292b2e 42%, #292b2e 100%);
-  }
-
-  .container {
-    //height: 83em;
-  }
-}
-
-@include media-breakpoint-up(md) {
-  body {
-    background: linear-gradient(180deg, #36373a 21%, #36373a 39%, #292b2e 59%, #292b2e 100%);
-  }
-}
 
 .container {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  //margin-top: 90px;
 }

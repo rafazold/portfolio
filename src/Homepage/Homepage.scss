@@ -3,9 +3,12 @@
 @import "~bootstrap/scss/mixins/_breakpoints";
 
 @include media-breakpoint-down(sm) {
+  body {
+    background: linear-gradient(180deg, #36373a 41%, #36373a 42%, #292b2e 42%, #292b2e 100%);
+  }
 
   .hp-background-wave {
-    top: 35em;
+    margin-top: 38em;
   }
 
   .curved-arrow {
@@ -91,9 +94,12 @@
   }
 
 @include media-breakpoint-up(md) {
+  body {
+    background: linear-gradient(180deg, #36373a 21%, #36373a 39%, #292b2e 59%, #292b2e 100%);
+  }
 
   .hp-background-wave {
-    top: 50em;
+    margin-top: 57%;
   }
 
   .curved-arrow {
@@ -161,6 +167,10 @@
     }
   }
 
+}
+
+.hide-back-home {
+  display: none;
 }
 
 .curved-arrow {
@@ -239,18 +249,32 @@
 
 }
 
-.hp-background-wave {
+.hp-background {
   position: absolute;
-  width: 100%;
-  object-fit: contain;
-  opacity: 0.97;
+  top: 0;
+  z-index: -1;
+
+  .hp-background-wave {
+    width: 100%;
+    object-fit: contain;
+    opacity: 0.97;
+  }
+
+  .hp-background-image {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  .hp-background-endless {
+    margin-top: -10px;
+    position: relative;
+    background: #292b2e;
+    height: 65em
+  }
+
 }
 
-.hp-background-image {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100%;
-}
 
 
