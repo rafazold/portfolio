@@ -14,11 +14,11 @@ class Projects extends Component {
                 name: 'Sentinel',
                 url: 'https://sentinel-c19c8.web.app/'
             },
-            // {
-            //     image: 'assets/instag.png',
-            //     name: 'Instaclone 3',
-            //     url: 'https://rafa-instagram.firebaseapp.com/'
-            // },
+            {
+                image: 'assets/bezeq.png',
+                name: 'Bezeq',
+                url: 'https://bezeq-25e26.firebaseapp.com/'
+            },
         ];
         return (
             <div className="projects" id="projects">
