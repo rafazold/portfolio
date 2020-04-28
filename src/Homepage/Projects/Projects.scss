@@ -23,17 +23,22 @@
     margin: 10px 10%;
   }
   .project-image {
-    height: 51vh;
+    height: 96%;
+    width: 95%
   }
 
   .project-wrapper {
     min-width: 34%;
+    .image-wrapper {
+      height: 51vh;
+      width: 37vw;
+    }
   }
   .project-button {
     padding: 8px 15px;
   }
   .project-footer {
-    padding: 10px 2%;
+    padding: 10px 3% 10px 0;;
   }
 }
 
