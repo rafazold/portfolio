@@ -31,12 +31,14 @@
 
   .initials {
     font-size: 22px;
+    line-height: 48px;
   }
 
   .download-cv {
     width: 11em;
     padding: 0 0.5em;
     height: 2.5em;
+    line-height: 2.5em;
     font-size: 0.8em;
     margin-right: 5%;
   }
@@ -68,6 +70,7 @@
     object-fit: contain;
     background-color: black;
     margin-left: 10%;
+    line-height: 80px;
     //background-color: var(--black);
   }
 
@@ -81,6 +84,7 @@
     height: 2.5em;
     font-size: 1.25em;
     margin-right: 10%;
+    line-height: 2.5em;
   }
 
 }
@@ -100,7 +104,6 @@
   font-weight: 900;
   font-stretch: normal;
   font-style: normal;
-  line-height: 80px;
   letter-spacing: normal;
   text-align: center;
   color: white;
