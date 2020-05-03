@@ -1,0 +1,34 @@
+{
+    "instaclone": {
+        "id": "instaclone",
+        "name": "Instaclone",
+        "image": "assets/instag.png",
+        "url": "https://rafa-instagram.firebaseapp.com",
+        "frontTags": [
+            "HTML 5",
+            "CSS 3",
+            "Javascript",
+            "Saas",
+            "Webpack",
+            "ES6",
+            "React",
+            "Git"
+        ],
+        "backTags": [
+            "Javascript",
+            "Node.js",
+            "ES6",
+            "MongoDB",
+            "Git"
+        ],
+        "libraries": [
+            "Javascript",
+            "Node.js",
+            "ES6",
+            "MongoDB",
+            "Git"
+        ],
+        "summary": "Instaclone is a functional copy of Instagram which is meant for users to share and see images and comments with other users.",
+        "features": ["read posts", "write posts", "authorization"]
+    }
+}
