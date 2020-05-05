@@ -1,3 +1,38 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins/_breakpoints";
+
+@include media-breakpoint-down(sm) {
+    .project-page-title {
+        font-size: 2em;
+    }
+    .project-page-buttons {
+        justify-content: space-around;
+        font-size: small;
+        a {
+            width: 40%;
+            .project-page-button {
+                height: 28px;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .project-page-title {
+        font-size: 5em;
+    }
+    .project-page-buttons {
+        justify-content: center;
+        a {
+            width: 22%;
+            .project-page-button {
+                height: 50px;
+            }
+        }
+    }
+}
+
 body {
     background: #36373a;
 }
@@ -64,7 +99,6 @@ body {
             max-width: 60%;
 
             .project-page-title {
-                font-size: 5em;
                 color: white;
                 margin-block-end: 0;
                 margin-block-start: 0.3em;
@@ -72,9 +106,7 @@ body {
             }
             .project-page-buttons {
                 display: flex;
-                justify-content: center;
                 a {
-                    width: 22%;
                     text-decoration: none;
                     color: white;
 
@@ -92,7 +124,6 @@ body {
                         justify-content: center;
                         align-items: center;
                         padding: 0 0.5em;
-                        height: 50px;
                         font-size: 1.25em;
                         margin: 0 1%;
 

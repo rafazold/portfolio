@@ -3,6 +3,7 @@ import './Projects.scss'
 import Modal from "react-bootstrap/Modal";
 import Header from "../../Header/Header";
 import data from '../../projects.json'
+import { Link, useParams } from "react-router-dom";
 import ProjectPage from "../../ProjectPage/ProjectPage";
 
 const Projects = () => {
@@ -22,14 +23,14 @@ const Projects = () => {
                 {projectsList.map(project => {
                     return <article className="project-wrapper" key={Math.random().toString(36).substring(2, 15)} onClick={handleShowModal}>
                         <div className="image-wrapper">
-                            <a /*href={project.url}*/ target="_blank" rel="noopener noreferrer">
+                            <Link to={`/projects/${data.projects[project].id}`}>
                                 <img
                                     className="project-image"
                                     src={data.projects[project].image}
                                     alt="project image"
                                     projectId={data.projects[project].id}
                                 />
-                            </a>
+                            </Link>
                         </div>
                         <div className="project-footer">
                             <span className="project-name">{data.projects[project].name}</span>
