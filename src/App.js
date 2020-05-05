@@ -16,7 +16,7 @@ function App() {
               <Header/>
               <main className="container">
                   <Switch>
-                      <Route path="/projectpage" component={ProjectPage}/>
+                      <Route path="/projects/:id" component={ProjectPage}/>
                       <Route path="/" component={Homepage}/>
                   </Switch>
               </main>

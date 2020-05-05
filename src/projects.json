@@ -1,34 +1,159 @@
 {
-    "instaclone": {
-        "id": "instaclone",
-        "name": "Instaclone",
-        "image": "assets/instag.png",
-        "url": "https://rafa-instagram.firebaseapp.com",
-        "frontTags": [
-            "HTML 5",
-            "CSS 3",
-            "Javascript",
-            "Saas",
-            "Webpack",
-            "ES6",
-            "React",
-            "Git"
-        ],
-        "backTags": [
-            "Javascript",
-            "Node.js",
-            "ES6",
-            "MongoDB",
-            "Git"
-        ],
-        "libraries": [
-            "Javascript",
-            "Node.js",
-            "ES6",
-            "MongoDB",
-            "Git"
-        ],
-        "summary": "Instaclone is a functional copy of Instagram which is meant for users to share and see images and comments with other users.",
-        "features": ["read posts", "write posts", "authorization"]
+    "sort": ["covid", "instaclone", "sentinel", "bezeq"],
+    "projects": {
+        "covid": {
+            "id": "covid",
+            "name": "Covid 19",
+            "image": "assets/covidnineteen.png",
+            "url": "https://covidnineteen.today",
+            "repo": "https://github.com/rafazold/outbreak",
+            "frontTags": [
+                "PENDING",
+                "HTML 5",
+                "CSS 3",
+                "Javascript",
+                "Saas",
+                "Webpack",
+                "ES6",
+                "React",
+                "Git"
+            ],
+            "backTags": [
+                "PENDING",
+                "Javascript",
+                "Node.js",
+                "ES6",
+                "MongoDB",
+                "Git"
+            ],
+            "libraries": [
+                "PENDING",
+                "Javascript",
+                "Node.js",
+                "ES6",
+                "MongoDB",
+                "Git"
+            ],
+            "summary": "Covid 19 is a functional copy of Instagram which is meant for users to share and see images and comments with other users.",
+            "features": [
+                "read posts",
+                "write posts",
+                "authorization"
+            ]
+        },
+        "instaclone": {
+            "id": "instaclone",
+            "name": "Instaclone",
+            "image": "assets/instag.png",
+            "url": "https://rafa-instagram.firebaseapp.com",
+            "repo": "https://github.com/rafazold/instagram-ui",
+            "frontTags": [
+                "HTML 5",
+                "CSS 3",
+                "Javascript",
+                "Saas",
+                "Webpack",
+                "ES6",
+                "React",
+                "Git"
+            ],
+            "backTags": [
+                "Javascript",
+                "Node.js",
+                "ES6",
+                "MongoDB",
+                "Git"
+            ],
+            "libraries": [
+                "Javascript",
+                "Node.js",
+                "ES6",
+                "MongoDB",
+                "Git"
+            ],
+            "summary": "Instaclone is a functional copy of Instagram which is meant for users to share and see images and comments with other users.",
+            "features": [
+                "read posts",
+                "write posts",
+                "authorization"
+            ]
+        },
+        "sentinel": {
+            "id": "sentinel",
+            "name": "Sentinel",
+            "image": "assets/sentinel7.png",
+            "url": "https://sentinel-c19c8.web.app",
+            "repo": "",
+            "frontTags": [
+                "PENDING",
+                "HTML 5",
+                "CSS 3",
+                "Javascript",
+                "Saas",
+                "Webpack",
+                "ES6",
+                "React",
+                "Git"
+            ],
+            "backTags": [
+                "PENDING",
+                "Javascript",
+                "Node.js",
+                "ES6",
+                "MongoDB",
+                "Git"
+            ],
+            "libraries": [
+                "PENDING",
+                "Javascript",
+                "Node.js",
+                "ES6",
+                "MongoDB",
+                "Git"
+            ],
+            "summary": "Sentinel is a functional copy of Instagram which is meant for users to share and see images and comments with other users.",
+            "features": [
+                "read posts",
+                "write posts",
+                "authorization"
+            ]
+        },
+        "bezeq": {
+            "id": "bezeq",
+            "name": "Bezeq",
+            "image": "assets/bezeq.png",
+            "url": "https://bezeq-25e26.firebaseapp.com",
+            "repo": "https://github.com/rafazold/bezeq-home-task",
+            "frontTags": [
+                "HTML 5",
+                "CSS 3",
+                "Javascript",
+                "Saas",
+                "Webpack",
+                "ES6",
+                "React",
+                "Git"
+            ],
+            "backTags": [
+                "Javascript",
+                "Node.js",
+                "ES6",
+                "MongoDB",
+                "Git"
+            ],
+            "libraries": [
+                "Javascript",
+                "Node.js",
+                "ES6",
+                "MongoDB",
+                "Git"
+            ],
+            "summary": "Instaclone is a functional copy of Instagram which is meant for users to share and see images and comments with other users.",
+            "features": [
+                "read posts",
+                "write posts",
+                "authorization"
+            ]
+        }
     }
 }
