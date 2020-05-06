@@ -14,6 +14,8 @@
         .back-home {
             font-size: 0.6em;
             opacity: 85%;
+            z-index: 10;
+            position: relative;
             .back-home-arrow {
                 margin-right: 0.57em;
             }
@@ -98,6 +100,9 @@
     //padding: 0 12vw
 }
 
+.initials-square {
+    display: block;
+}
 .initials {
     display: block;
     font-family: Roboto;

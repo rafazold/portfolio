@@ -8,19 +8,21 @@ const Header = () => {
     return (
         <div className="Header">
             <span className="header-left">
-                <span className="initials-square">
+                <Link to={'/'}>
+                    <span className="initials-square">
                     <span className="initials">RZ</span>
                 </span>
+                </Link>
                 {location.pathname.length > 1 ?
                     <Link to={'/'}>
-                    <span className="back-home">
-
-                        <img className="back-home-arrow"
-                                        src={`${process.env.PUBLIC_URL}/assets/back-arrow.svg`}
-                                        alt="back-arrow"/>
-
-
-                Back Home</span>
+                        <span className="back-home">
+    
+                            <img className="back-home-arrow"
+                                            src={`${process.env.PUBLIC_URL}/assets/back-arrow.svg`}
+                                            alt="back-arrow"/>
+    
+    
+                    Back Home</span>
                     </Link>
                     : null}
             </span>
