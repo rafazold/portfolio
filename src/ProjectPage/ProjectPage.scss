@@ -3,32 +3,82 @@
 @import "~bootstrap/scss/mixins/_breakpoints";
 
 @include media-breakpoint-down(sm) {
-    .project-page-title {
-        font-size: 2em;
+    .right-arrow-wrapper {
+        right: 5px;
     }
-    .project-page-buttons {
-        justify-content: space-around;
-        font-size: small;
-        a {
-            width: 40%;
-            .project-page-button {
-                height: 28px;
+    .left-arrow-wrapper {
+        left: 5px;
+    }
+    .project-arrow-wrapper {
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        top: 50vh;
+        .project-arrow {
+            width: 20px;
+            height: 20px;
+            line-height: 50px;
+        }
+    }
+    .project-page-content {
+        max-width: 90%;
+        .project-page-title {
+            font-size: 2em;
+        }
+        .project-page-buttons {
+            justify-content: space-around;
+            font-size: small;
+
+            a {
+                width: 40%;
+
+                .project-page-button {
+                    height: 28px;
+                }
+            }
+        }
+        .project-page-details {
+            margin: 2em 0;
+        }
+        .project-page-bullets {
+            font-size: 0.8em;
+            .skill {
+                font-size: 12px;
             }
         }
     }
 }
 
 @include media-breakpoint-up(md) {
-    .project-page-title {
-        font-size: 5em;
+
+    .project-arrow-wrapper {
+        width: 100px;
+        height: 100px;
+        .project-arrow {
+            width: 70px;
+            height: 70px;
+            line-height: 80px;
+        }
     }
-    .project-page-buttons {
-        justify-content: center;
-        a {
-            width: 22%;
-            .project-page-button {
-                height: 50px;
+
+    .project-page-content {
+        max-width: 60%;
+        .project-page-title {
+            font-size: 5em;
+        }
+        .project-page-buttons {
+            justify-content: center;
+
+            a {
+                width: 22%;
+
+                .project-page-button {
+                    height: 50px;
+                }
             }
+        }
+        .project-page-details {
+            margin: 3em 0;
         }
     }
 }
@@ -44,8 +94,6 @@ body {
         text-align: center;
         margin: 80px auto;
         .project-arrow-wrapper {
-            width: 100px;
-            height: 100px;
             border-radius: 50%;
             align-self: center;
             background: #2b29294a;
@@ -57,10 +105,7 @@ body {
                 background: #2B08080E;
             }
             .project-arrow {
-                width: 70px;
-                height: 70px;
                 background: white;
-                line-height: 80px;
                 -webkit-mask-image: url(../icons/next.svg);
                 mask-image: url(../icons/next.svg);
                 -webkit-mask-repeat: no-repeat;
@@ -85,6 +130,9 @@ body {
             }
         }
         .project-page-content {
+            font-size: 1.7em;
+            font-weight: 300;
+            color: white;
             .skills {
                 color: black;
                 display: inline-flex;
@@ -93,10 +141,6 @@ body {
                     margin-bottom: 0;
                 }
             }
-            font-size: 1.7em;
-            font-weight: 300;
-            color: white;
-            max-width: 60%;
 
             .project-page-title {
                 color: white;
@@ -134,9 +178,7 @@ body {
                 }
             }
             .project-page-details {
-                //margin: 4vh 15%;
                 font-weight: 300;
-                margin: 3em 0;
 
             }
             .project-page-bullets {

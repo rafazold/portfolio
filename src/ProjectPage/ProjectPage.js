@@ -46,7 +46,7 @@ const ProjectPage = () => {
     return (
         <div className="project-page">
             <div className="project-page-wrapper">
-                <span className="project-arrow-wrapper" >
+                <span className="project-arrow-wrapper left-arrow-wrapper" >
                     <Link to={`/projects/${handleClick("prev")}`}>
                         <span className="project-prev-arrow project-arrow"> </span>
                     </Link>
@@ -67,7 +67,7 @@ const ProjectPage = () => {
                             </span>
                             </a>
                         </div>
-                        <h3 className="project-page-details">{project.summary}</h3>
+                        <p className="project-page-details">{project.summary}</p>
                         {/*<h3 className="project-page-details">App usage and details: </h3>*/}
                         <ul className="project-page-bullets">
                             {project.features.length ? <li>
@@ -94,7 +94,7 @@ const ProjectPage = () => {
                             </li> : null}
                         </ul>
                     </div>
-                <span className="project-arrow-wrapper" onClick={handleClick}>
+                <span className="project-arrow-wrapper right-arrow-wrapper" onClick={handleClick}>
                     <Link to={`/projects/${handleClick("next")}`}>
                         <span className="project-next-arrow project-arrow"> </span>
                     </Link>
