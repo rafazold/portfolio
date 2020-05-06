@@ -4,10 +4,6 @@ import Tags from "../Tags/Tags";
 import Projects from "./Projects/Projects";
 import CurvedArrow from "./CurvedArrow/CurvedArrow";
 import { HashLink } from 'react-router-hash-link';
-import Modal from "react-bootstrap/Modal";
-import Header from "../Header/Header";
-import ProjectPage from "../ProjectPage/ProjectPage";
-// import projects from './projects.json'
 
 const Homepage = () => {
 

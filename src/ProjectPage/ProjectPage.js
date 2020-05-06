@@ -1,11 +1,12 @@
 import React, {useState} from 'react';
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useHistory } from "react-router-dom";
 import './ProjectPage.scss';
 import Tags from "../Tags/Tags";
 import {AiOutlineCode} from 'react-icons/ai';
 import {GoHome} from 'react-icons/go';
 import {FcNext} from 'react-icons/fc';
 import data from '../projects.json'
+import { useSwipeable, Swipeable } from 'react-swipeable'
 
 
 
@@ -14,13 +15,19 @@ const ProjectPage = () => {
     const [currentProject, setCurrentProject] = useState()
     const project = data.projects[id];
     const projectsArr = data.sort;
+    let history = useHistory();
 
-    const handleClick = (button) => {
+    const getRoute = (direction) => {
         // const button = e.target.getAttribute('class').split("-")[1];
-        const routeTo = projectsArr[getNextPage(projectsArr, button)];
+        const routeTo = projectsArr[getNextPage(projectsArr, direction)];
         console.log('next', routeTo)
         console.log(projectsArr.indexOf(id))
         return routeTo;
+    }
+
+    const swipe = (direction) => {
+        const route = getRoute(direction);
+        history.push(`/projects/${route}`)
     }
 
     const getNextPage = (arr, direction) => {
@@ -47,11 +54,12 @@ const ProjectPage = () => {
         <div className="project-page">
             <div className="project-page-wrapper">
                 <span className="project-arrow-wrapper left-arrow-wrapper" >
-                    <Link to={`/projects/${handleClick("prev")}`}>
+                    <Link to={`/projects/${getRoute("prev")}`}>
                         <span className="project-prev-arrow project-arrow"> </span>
                     </Link>
                 </span>
                 <div className="project-page-content">
+                    <Swipeable onSwipedLeft={() => swipe('prev')} onSwipedRight={() => swipe('next')}>
                         <h2 className="project-page-title">{project.name}</h2>
                         <div className="project-page-buttons">
                             <a href={project.repo} target="_blank" rel="noreferrer noopener" >
@@ -81,21 +89,22 @@ const ProjectPage = () => {
                                 </p>
                             </li> : null}
                             {project.frontTags.length ? <li>
-                                <p>
+                                <p className="project-tags">
                                     <strong>Frontend tech stack</strong>:
                                     <Tags skills={project.frontTags}/>
                                 </p>
                             </li> : null}
                             {project.backTags.length ? <li>
-                                <p>
+                                <p className="project-tags">
                                     <strong>Backend tech stack</strong>:
                                     <Tags skills={project.backTags}/>
                                 </p>
                             </li> : null}
                         </ul>
-                    </div>
-                <span className="project-arrow-wrapper right-arrow-wrapper" onClick={handleClick}>
-                    <Link to={`/projects/${handleClick("next")}`}>
+                    </Swipeable>
+                </div>
+                <span className="project-arrow-wrapper right-arrow-wrapper" onClick={getRoute}>
+                    <Link to={`/projects/${getRoute("next")}`}>
                         <span className="project-next-arrow project-arrow"> </span>
                     </Link>
                 </span>
