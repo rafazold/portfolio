@@ -80,12 +80,12 @@ const ProjectPage = () => {
                         <ul className="project-page-bullets">
                             {project.features.length ? <li>
                                 <p>
-                                    <strong>Features</strong>: {project.features.join(', ')}
+                                    <strong>Features</strong>: {project.features.join(', ')}.
                                 </p>
                             </li> : null}
                             {project.libraries.length ? <li>
                                 <p>
-                                    <strong>External libraries</strong>: {project.libraries.join(', ')}
+                                    <strong>External libraries</strong>: {project.libraries.join(', ')}.
                                 </p>
                             </li> : null}
                             {project.frontTags.length ? <li>

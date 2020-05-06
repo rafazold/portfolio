@@ -8,18 +8,16 @@
             "url": "https://covidnineteen.today",
             "repo": "https://github.com/rafazold/outbreak",
             "frontTags": [
-                "PENDING",
                 "HTML 5",
                 "CSS 3",
                 "Javascript",
+                "ES6",
                 "Saas",
                 "Webpack",
-                "ES6",
                 "React",
                 "Git"
             ],
             "backTags": [
-                "PENDING",
                 "Javascript",
                 "Node.js",
                 "ES6",
@@ -27,18 +25,27 @@
                 "Git"
             ],
             "libraries": [
-                "PENDING",
-                "Javascript",
-                "Node.js",
-                "ES6",
-                "MongoDB",
-                "Git"
+                "React",
+                "Express",
+                "mongoose",
+                "react-simple-maps (d3 based)",
+                "recharts",
+                "react-bootstrap",
+                "react-tooltip",
+                "react-world-flags",
+                "react-zoom-pan-pinch",
+                "moment",
+                "newsapi",
+                "covidapi"
+
             ],
-            "summary": "Covid 19 is a functional copy of Instagram which is meant for users to share and see images and comments with other users.",
+            "summary": "Covid 19 is an information app to check the latest statistics for the COVID 19 outbreak. The project uses React with hooks for the front end, Mongodb and node js in the back end. It's hosted in firebase (static) and heroku.",
             "features": [
-                "read posts",
-                "write posts",
-                "authorization"
+                "responsive",
+                "update news & covid 19 stats hourly via API",
+                "zoomable map with tooltips and colors",
+                "timeline graph with statistics per country",
+                "server with endpoints for statistics and news"
             ]
         },
         "instaclone": {
@@ -63,19 +70,27 @@
                 "ES6",
                 "MongoDB",
                 "Git"
-            ],
+                ],
             "libraries": [
-                "Javascript",
-                "Node.js",
-                "ES6",
-                "MongoDB",
-                "Git"
+                "formik & yup",
+                "react-bootstrap",
+                "react-router-dom",
+                "react-tagsinput",
+                "timeago-react",
+                "express",
+                "jsonwebtoken",
+                "mongoose",
+                "multer",
+                "multer-google-storage"
             ],
-            "summary": "Instaclone is a functional copy of Instagram which is meant for users to share and see images and comments with other users.",
+            "summary": "Instaclone is a functional copy of Instagram that simulates the experience of users creating their profiles, sharing images and comments. and exploring into other users shared posts. Instaclone uses React (class components) in the front end and node js with express in the back end.",
             "features": [
-                "read posts",
-                "write posts",
-                "authorization"
+                "CRUD API for profile, posts, comments, and likes",
+                "profile create and edit",
+                "authorization using JWT token and cookies",
+                "posts area",
+                "comments area",
+                "track likes"
             ]
         },
         "sentinel": {
