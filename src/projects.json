@@ -83,9 +83,9 @@
                 "multer",
                 "multer-google-storage"
             ],
-            "summary": "Instaclone is a functional copy of Instagram that simulates the experience of users creating their profiles, sharing images and comments. and exploring into other users shared posts. Instaclone uses React (class components) in the front end and node js with express in the back end.",
+            "summary": "Instaclone is a functional copy of Instagram the full experience of users creating their profiles, sharing images and comments. and exploring into other users posts. Instaclone uses React (class components) in the front end and node js with express in the back end. The project is hosted in firebase (front), heroku (back) and storage in firestore.",
             "features": [
-                "CRUD API for profile, posts, comments, and likes",
+                "REST API for profile, posts, comments, and likes",
                 "profile create and edit",
                 "authorization using JWT token and cookies",
                 "posts area",
@@ -100,37 +100,33 @@
             "url": "https://sentinel-c19c8.web.app",
             "repo": "",
             "frontTags": [
-                "PENDING",
                 "HTML 5",
                 "CSS 3",
                 "Javascript",
+                "ES6",
                 "Saas",
                 "Webpack",
-                "ES6",
                 "React",
                 "Git"
             ],
             "backTags": [
-                "PENDING",
-                "Javascript",
-                "Node.js",
-                "ES6",
-                "MongoDB",
+                "firebase (hosting & cloud functions)",
+                "firestore",
                 "Git"
             ],
             "libraries": [
-                "PENDING",
-                "Javascript",
-                "Node.js",
-                "ES6",
-                "MongoDB",
-                "Git"
+                "React",
+                "react-router-dom",
+                "use-debounce",
+                "sass",
+                "crawler"
             ],
-            "summary": "Sentinel is a functional copy of Instagram which is meant for users to share and see images and comments with other users.",
+            "summary": "Sentinel is startup project with social impact. The code for this project is private and a demo can be scheduled upon request.",
             "features": [
-                "read posts",
-                "write posts",
-                "authorization"
+                "search query based documents",
+                "fetch cards from database",
+                "debounce and auto-complete search terms",
+                "sidebar including global results"
             ]
         },
         "bezeq": {
@@ -144,30 +140,19 @@
                 "CSS 3",
                 "Javascript",
                 "Saas",
-                "Webpack",
-                "ES6",
-                "React",
                 "Git"
             ],
-            "backTags": [
-                "Javascript",
-                "Node.js",
-                "ES6",
-                "MongoDB",
-                "Git"
-            ],
+            "backTags": [],
             "libraries": [
-                "Javascript",
-                "Node.js",
-                "ES6",
-                "MongoDB",
-                "Git"
+                "bootstrap",
+                "sass"
             ],
-            "summary": "Instaclone is a functional copy of Instagram which is meant for users to share and see images and comments with other users.",
+            "summary": "Bezeq is a visual only static website based on a Zeplin design. The page is responsive for mobile and pc and hosted in firebase.",
             "features": [
-                "read posts",
-                "write posts",
-                "authorization"
+                "hover triggered animations on icons and some elements",
+                "images carousel in the bottom of the page (mobile)",
+                "progressive statusbar based on input value",
+                "svg icons management using masks"
             ]
         }
     }
