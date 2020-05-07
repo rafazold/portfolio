@@ -4,16 +4,15 @@
 
 @include media-breakpoint-down(sm) {
     .right-arrow-wrapper {
-        right: 5px;
+        right: 0;
     }
     .left-arrow-wrapper {
-        left: 5px;
+        left: 0;
     }
     .project-arrow-wrapper {
-        width: 50px;
-        height: 50px;
+        width: 25px;
+        height: 25px;
         position: fixed;
-        top: 50vh;
         .project-arrow {
             width: 20px;
             height: 20px;
@@ -108,7 +107,8 @@ body {
         margin: 80px auto;
         .project-arrow-wrapper {
             border-radius: 50%;
-            align-self: center;
+            //align-self: center;
+            margin-top: 40vh;
             background: #2b29294a;
             display: flex;
             flex-direction: column;
