@@ -20,8 +20,6 @@ const ProjectPage = () => {
     const getRoute = (direction) => {
         // const button = e.target.getAttribute('class').split("-")[1];
         const routeTo = projectsArr[getNextPage(projectsArr, direction)];
-        console.log('next', routeTo)
-        console.log(projectsArr.indexOf(id))
         return routeTo;
     }
 
