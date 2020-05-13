@@ -1,4 +1,4 @@
-import React, {Component, useState} from 'react';
+import React from 'react';
 import './Projects.scss'
 import data from '../../projects.json'
 import { Link } from "react-router-dom";
@@ -15,7 +15,7 @@ const Projects = () => {
                                 <img
                                     className="project-image"
                                     src={data.projects[project].image}
-                                    alt="project image"
+                                    alt="project example"
                                 />
                             </Link>
                         </div>

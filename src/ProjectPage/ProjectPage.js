@@ -1,18 +1,16 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { Link, useParams, useHistory } from "react-router-dom";
 import './ProjectPage.scss';
 import Tags from "../Tags/Tags";
 import {AiOutlineCode} from 'react-icons/ai';
 import {GoHome} from 'react-icons/go';
-import {FcNext} from 'react-icons/fc';
 import data from '../projects.json'
-import { useSwipeable, Swipeable } from 'react-swipeable'
+import { Swipeable } from 'react-swipeable'
 
 
 
 const ProjectPage = () => {
     let {id} = useParams();
-    const [currentProject, setCurrentProject] = useState()
     const project = data.projects[id];
     const projectsArr = data.sort;
     let history = useHistory();

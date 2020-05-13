@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './Homepage.scss'
 import Tags from "../Tags/Tags";
 import Projects from "./Projects/Projects";

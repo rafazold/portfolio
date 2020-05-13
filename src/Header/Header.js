@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './Header.scss'
 import {AiOutlineDownload} from 'react-icons/ai';
-import { Link, useParams, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
     let location = useLocation();
