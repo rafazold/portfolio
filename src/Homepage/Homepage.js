@@ -32,7 +32,7 @@ const Homepage = () => {
                         'HTML 5',
                         'CSS 3',
                         'Javascript',
-                        'Saas',
+                        'Sass',
                         'Node.js',
                         'Webpack',
                         'ES6',
