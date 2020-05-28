@@ -50,9 +50,9 @@ const ProjectPage = () => {
         <div className="project-page">
             <div className="project-page-wrapper">
                 <span className="project-arrow-wrapper left-arrow-wrapper" >
-                    <Link to={`/projects/${getRoute("prev")}`}>
-                        <span className="project-prev-arrow project-arrow"> </span>
-                    </Link>
+                    {/*<Link to={`/projects/${getRoute("prev")}`}>*/}
+                        <span className="project-prev-arrow project-arrow" onClick={() => swipe('prev')}> </span>
+                    {/*</Link>*/}
                 </span>
                 <div className="project-page-content">
                     <Swipeable onSwipedLeft={() => swipe('prev')} onSwipedRight={() => swipe('next')}>
@@ -100,9 +100,9 @@ const ProjectPage = () => {
                     </Swipeable>
                 </div>
                 <span className="project-arrow-wrapper right-arrow-wrapper" onClick={getRoute}>
-                    <Link to={`/projects/${getRoute("next")}`}>
-                        <span className="project-next-arrow project-arrow"> </span>
-                    </Link>
+                    {/*<Link to={`/projects/${getRoute("next")}`}>*/}
+                        <span className="project-next-arrow project-arrow" onClick={() => swipe('next')}> </span>
+                    {/*</Link>*/}
                 </span>
             </div>
         </div>
