@@ -38,6 +38,8 @@ const Homepage = () => {
                         'ES6',
                         'React',
                         'MongoDB',
+                        
+                        'flutter',
                         'Git'
                     ]
                 } />

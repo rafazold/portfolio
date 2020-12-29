@@ -26,7 +26,7 @@ const Header = () => {
                     </Link>
                     : null}
             </span>
-            <a className='download-cv' href="./assets/Rafael Zoldan - Resume.pdf" target="_blank" download>Download my CV
+            <a className='download-cv' href="./assets/Rafael Zoldan - Full Stack.pdf" target="_blank" download>Download my CV
                 <AiOutlineDownload size={'1.6em'}/>
             </a>
         </div>
