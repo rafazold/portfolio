@@ -16,9 +16,7 @@ const ProjectPage = () => {
     let history = useHistory();
 
     const getRoute = (direction) => {
-        // const button = e.target.getAttribute('class').split("-")[1];
-        const routeTo = projectsArr[getNextPage(projectsArr, direction)];
-        return routeTo;
+        return projectsArr[getNextPage(projectsArr, direction)];
     }
 
     const swipe = (direction) => {
@@ -50,9 +48,7 @@ const ProjectPage = () => {
         <div className="project-page">
             <div className="project-page-wrapper">
                 <span className="project-arrow-wrapper left-arrow-wrapper" >
-                    {/*<Link to={`/projects/${getRoute("prev")}`}>*/}
                         <span className="project-prev-arrow project-arrow" onClick={() => swipe('prev')}> </span>
-                    {/*</Link>*/}
                 </span>
                 <div className="project-page-content">
                     <Swipeable onSwipedLeft={() => swipe('prev')} onSwipedRight={() => swipe('next')}>
