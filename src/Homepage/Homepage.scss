@@ -83,7 +83,7 @@
   .footer-contact {
     margin: 3em auto;
 
-    .phone{
+    .phone {
       margin-right: 65px;
     }
 
@@ -91,7 +91,7 @@
       height: 55px;
     }
   }
-  }
+}
 
 @include media-breakpoint-up(md) {
   body {

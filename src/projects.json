@@ -1,220 +1,186 @@
 {
-    "sort": ["looneycam","weatherapp","covid", "instaclone", "sentinel", "bezeq"],
-    "projects": {
-        "covid": {
-            "id": "covid",
-            "name": "Covid 19",
-            "image": "assets/covidnineteen.png",
-            "url": "https://outbreak-9e38c.web.app/",
-            "repo": "https://github.com/rafazold/outbreak",
-            "frontTags": [
-                "HTML 5",
-                "CSS 3",
-                "Javascript",
-                "ES6",
-                "Sass",
-                "Webpack",
-                "React",
-                "Git"
-            ],
-            "backTags": [
-                "Javascript",
-                "Node.js",
-                "ES6",
-                "MongoDB",
-                "Git"
-            ],
-            "libraries": [
-                "React",
-                "Express",
-                "mongoose",
-                "react-simple-maps (d3 based)",
-                "recharts",
-                "react-bootstrap",
-                "react-tooltip",
-                "react-world-flags",
-                "react-zoom-pan-pinch",
-                "moment",
-                "newsapi",
-                "covidapi"
-
-            ],
-            "summary": "Covid 19 is an information app to check the latest statistics for the COVID 19 outbreak. The project uses React with hooks for the front end, Mongodb and node js in the back end. It's hosted in firebase (static) and heroku.",
-            "features": [
-                "responsive",
-                "update news & covid 19 stats hourly via API",
-                "zoomable map with tooltips and colors",
-                "timeline graph with statistics per country",
-                "server with endpoints for statistics and news"
-            ]
-        },
-        "looneycam": {
-            "id": "looneycam",
-            "name": "Looney-Cam",
-            "image": "assets/looneycam.png",
-            "url": "https://play.google.com/store/apps/details?id=com.looneycam.looneycam",
-            "repo": "https://github.com/rafazold/googly-eyes",
-            "frontTags": [
-                "Flutter",
-                "Git"
-            ],
-            "backTags": [
-            ],
-            "libraries": [
-                "Flutter",
-                "video_player",
-                "ffmpeg",
-                "firebase"
-            ],
-            "summary": "LooneyCam is a project that takes a regular image and adds to it funny eyes. You can also add a text or voice message and send it to your contacts using your favorite sharing app.",
-            "features": [
-                "available to download from google play store",
-                "image storage in device",
-                "share using native channels",
-                "add customized text",
-                "add customized audio",
-                "code supported for android and ios devices",
-                "responsive"
-            ]
-        },
-"weatherapp": {
-            "id": "weatherapp",
-            "name": "Weather App",
-            "image": "assets/weather-app.png",
-            "url": "https://rafa-weather.netlify.app/",
-            "repo": "https://github.com/rafazold/googly-eyes",
-            "frontTags": [
-                "React",
-                "React-router",
-                "Redux",
-                "webpack 5",
-                "Tailwindcss",
-                "Git"
-            ],
-            "backTags": [
-            ],
-            "libraries": [
-                "thunky",
-                "react-select",
-                "axios",
-                "toast"
-            ],
-            "summary": "A weather app built with React, Redux, and a customized webpack setup. Connects to the API of Accuweather and shows the weather for any city in the world.",
-            "features": [
-                "auto-detect and fetch weather for your current city",
-                "save in local storage your favorite cities",
-                "display favorite cities in separate route",
-                "link to city 5 day forecast upon click",
-                "dark mode with toggle",
-                "responsive design"
-            ]
-        },
-        "instaclone": {
-            "id": "instaclone",
-            "name": "Instaclone",
-            "image": "assets/instag.png",
-            "url": "https://rafa-instagram.firebaseapp.com",
-            "repo": "https://github.com/rafazold/instagram-ui",
-            "frontTags": [
-                "HTML 5",
-                "CSS 3",
-                "Javascript",
-                "Sass",
-                "Webpack",
-                "ES6",
-                "React",
-                "Git"
-            ],
-            "backTags": [
-                "Javascript",
-                "Node.js",
-                "ES6",
-                "MongoDB",
-                "Git"
-                ],
-            "libraries": [
-                "formik & yup",
-                "react-bootstrap",
-                "react-router-dom",
-                "react-tagsinput",
-                "timeago-react",
-                "express",
-                "jsonwebtoken",
-                "mongoose",
-                "multer",
-                "multer-google-storage"
-            ],
-            "summary": "Instaclone is a functional copy of Instagram the full experience of users creating their profiles, sharing images and comments. and exploring into other users posts. Instaclone uses React (class components) in the front end and node js with express in the back end. The project is hosted in firebase (front), heroku (back) and storage in firestore.",
-            "features": [
-                "REST API for profile, posts, comments, and likes",
-                "profile create and edit",
-                "authorization using JWT token and cookies",
-                "posts area",
-                "comments area",
-                "track likes"
-            ]
-        },
-        "sentinel": {
-            "id": "sentinel",
-            "name": "Sentinel",
-            "image": "assets/sentinel7.png",
-            "url": "https://sentinel-c19c8.web.app",
-            "repo": "",
-            "frontTags": [
-                "HTML 5",
-                "CSS 3",
-                "Javascript",
-                "ES6",
-                "Sass",
-                "Webpack",
-                "React",
-                "Git"
-            ],
-            "backTags": [
-                "firebase (hosting & cloud functions)",
-                "firestore",
-                "Git"
-            ],
-            "libraries": [
-                "React",
-                "react-router-dom",
-                "use-debounce",
-                "sass",
-                "crawler"
-            ],
-            "summary": "Sentinel is startup project with social impact. The code for this project is private and a demo can be scheduled upon request.",
-            "features": [
-                "search query based documents",
-                "fetch cards from database",
-                "debounce and auto-complete search terms",
-                "sidebar including global results"
-            ]
-        },
-        "bezeq": {
-            "id": "bezeq",
-            "name": "Bezeq",
-            "image": "assets/bezeq.png",
-            "url": "https://bezeq-25e26.firebaseapp.com",
-            "repo": "https://github.com/rafazold/bezeq-home-task",
-            "frontTags": [
-                "HTML 5",
-                "CSS 3",
-                "Javascript",
-                "Sass",
-                "Git"
-            ],
-            "backTags": [],
-            "libraries": [
-                "bootstrap",
-                "sass"
-            ],
-            "summary": "Bezeq is a visual only static website based on a Zeplin design. The page is responsive for mobile and pc and hosted in firebase.",
-            "features": [
-                "hover triggered animations on icons and some elements",
-                "images carousel in the bottom of the page (mobile)",
-                "progressive statusbar based on input value",
-                "svg icons management using masks"
-            ]
-        }
+  "sort": [
+    "looneycam",
+    "weatherapp",
+    "covid",
+    "instaclone",
+    "sentinel",
+    "bezeq"
+  ],
+  "projects": {
+    "covid": {
+      "id": "covid",
+      "name": "Covid 19",
+      "image": "assets/covidnineteen.png",
+      "url": "https://outbreak-9e38c.web.app/",
+      "repo": "https://github.com/rafazold/outbreak",
+      "frontTags": [
+        "HTML 5",
+        "CSS 3",
+        "Javascript",
+        "ES6",
+        "Sass",
+        "Webpack",
+        "React",
+        "Git"
+      ],
+      "backTags": ["Javascript", "Node.js", "ES6", "MongoDB", "Git"],
+      "libraries": [
+        "React",
+        "Express",
+        "mongoose",
+        "react-simple-maps (d3 based)",
+        "recharts",
+        "react-bootstrap",
+        "react-tooltip",
+        "react-world-flags",
+        "react-zoom-pan-pinch",
+        "moment",
+        "newsapi",
+        "covidapi"
+      ],
+      "summary": "Covid 19 is an information app to check the latest statistics for the COVID 19 outbreak. The project uses React with hooks for the front end, Mongodb and node js in the back end. It's hosted in firebase (static) and heroku.",
+      "features": [
+        "responsive",
+        "update news & covid 19 stats hourly via API",
+        "zoomable map with tooltips and colors",
+        "timeline graph with statistics per country",
+        "server with endpoints for statistics and news"
+      ]
+    },
+    "looneycam": {
+      "id": "looneycam",
+      "name": "Looney-Cam",
+      "image": "assets/looneycam.png",
+      "url": "https://play.google.com/store/apps/details?id=com.looneycam.looneycam",
+      "repo": "https://github.com/rafazold/googly-eyes",
+      "frontTags": ["Flutter", "Git"],
+      "backTags": [],
+      "libraries": ["Flutter", "video_player", "ffmpeg", "firebase"],
+      "summary": "LooneyCam is a project that takes a regular image and adds to it funny eyes. You can also add a text or voice message and send it to your contacts using your favorite sharing app.",
+      "features": [
+        "available to download from google play store",
+        "image storage in device",
+        "share using native channels",
+        "add customized text",
+        "add customized audio",
+        "code supported for android and ios devices",
+        "responsive"
+      ]
+    },
+    "weatherapp": {
+      "id": "weatherapp",
+      "name": "Weather App",
+      "image": "assets/weather-app.png",
+      "url": "https://rafa-weather.netlify.app/",
+      "repo": "https://github.com/rafazold/googly-eyes",
+      "frontTags": [
+        "React",
+        "React-router",
+        "Redux",
+        "webpack 5",
+        "Tailwindcss",
+        "Git"
+      ],
+      "backTags": [],
+      "libraries": ["thunky", "react-select", "axios", "toast"],
+      "summary": "A weather app built with React, Redux, and a customized webpack setup. Connects to the API of Accuweather and shows the weather for any city in the world.",
+      "features": [
+        "auto-detect and fetch weather for your current city",
+        "save in local storage your favorite cities",
+        "display favorite cities in separate route",
+        "link to city 5 day forecast upon click",
+        "dark mode with toggle",
+        "responsive design"
+      ]
+    },
+    "instaclone": {
+      "id": "instaclone",
+      "name": "Instaclone",
+      "image": "assets/instag.png",
+      "url": "https://rafa-instagram.firebaseapp.com",
+      "repo": "https://github.com/rafazold/instagram-ui",
+      "frontTags": [
+        "HTML 5",
+        "CSS 3",
+        "Javascript",
+        "Sass",
+        "Webpack",
+        "ES6",
+        "React",
+        "Git"
+      ],
+      "backTags": ["Javascript", "Node.js", "ES6", "MongoDB", "Git"],
+      "libraries": [
+        "formik & yup",
+        "react-bootstrap",
+        "react-router-dom",
+        "react-tagsinput",
+        "timeago-react",
+        "express",
+        "jsonwebtoken",
+        "mongoose",
+        "multer",
+        "multer-google-storage"
+      ],
+      "summary": "Instaclone is a functional copy of Instagram the full experience of users creating their profiles, sharing images and comments. and exploring into other users posts. Instaclone uses React (class components) in the front end and node js with express in the back end. The project is hosted in firebase (front), heroku (back) and storage in firestore.",
+      "features": [
+        "REST API for profile, posts, comments, and likes",
+        "profile create and edit",
+        "authorization using JWT token and cookies",
+        "posts area",
+        "comments area",
+        "track likes"
+      ]
+    },
+    "sentinel": {
+      "id": "sentinel",
+      "name": "Sentinel",
+      "image": "assets/sentinel7.png",
+      "url": "https://sentinel-c19c8.web.app",
+      "repo": "",
+      "frontTags": [
+        "HTML 5",
+        "CSS 3",
+        "Javascript",
+        "ES6",
+        "Sass",
+        "Webpack",
+        "React",
+        "Git"
+      ],
+      "backTags": ["firebase (hosting & cloud functions)", "firestore", "Git"],
+      "libraries": [
+        "React",
+        "react-router-dom",
+        "use-debounce",
+        "sass",
+        "crawler"
+      ],
+      "summary": "Sentinel is startup project with social impact. The code for this project is private and a demo can be scheduled upon request.",
+      "features": [
+        "search query based documents",
+        "fetch cards from database",
+        "debounce and auto-complete search terms",
+        "sidebar including global results"
+      ]
+    },
+    "bezeq": {
+      "id": "bezeq",
+      "name": "Bezeq",
+      "image": "assets/bezeq.png",
+      "url": "https://bezeq-25e26.firebaseapp.com",
+      "repo": "https://github.com/rafazold/bezeq-home-task",
+      "frontTags": ["HTML 5", "CSS 3", "Javascript", "Sass", "Git"],
+      "backTags": [],
+      "libraries": ["bootstrap", "sass"],
+      "summary": "Bezeq is a visual only static website based on a Zeplin design. The page is responsive for mobile and pc and hosted in firebase.",
+      "features": [
+        "hover triggered animations on icons and some elements",
+        "images carousel in the bottom of the page (mobile)",
+        "progressive statusbar based on input value",
+        "svg icons management using masks"
+      ]
     }
+  }
 }

@@ -3,208 +3,230 @@
 @import "~bootstrap/scss/mixins/_breakpoints";
 
 @include media-breakpoint-down(sm) {
-    .right-arrow-wrapper {
-        right: 0;
-    }
-    .left-arrow-wrapper {
-        left: 0;
-    }
-    .project-arrow-wrapper {
-        width: 50px;
-        height: 50px;
-        position: fixed;
-        .project-arrow {
-            width: 30px;
-            height: 30px;
-            line-height: 50px;
-        }
-    }
-    .project-page-content {
-        max-width: 85%;
-        margin-left: auto;
-        margin-right: auto;
-        .project-page-title {
-            font-size: 2em;
-        }
-        .project-page-buttons {
-            justify-content: center;
-            font-size: small;
+  .right-arrow-wrapper {
+    right: 0;
+  }
+  .left-arrow-wrapper {
+    left: 0;
+  }
+  .project-arrow-wrapper {
+    width: 50px;
+    height: 50px;
+    position: fixed;
 
-            a {
-                width: 28%;
-                margin: 2% 1%;
-
-                .project-page-button {
-                    font-size: 1.25em;
-                    height: 28px;
-                }
-            }
-        }
-        .project-page-details {
-            margin: 2em 0;
-            font-size: 20px;
-        }
-        .project-page-bullets {
-            font-size: 18px;
-            p {
-                margin-block-end: 0.2em;
-                margin-block-start: 0em;
-            }
-            .skill {
-                font-size: 12px;
-            }
-        }
+    .project-arrow {
+      width: 30px;
+      height: 30px;
+      line-height: 50px;
     }
+  }
+  .project-page-content {
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+
+    .project-page-title {
+      font-size: 2em;
+    }
+
+    .project-page-buttons {
+      justify-content: center;
+      font-size: small;
+
+      a {
+        width: 28%;
+        margin: 2% 1%;
+
+        .project-page-button {
+          font-size: 1.25em;
+          height: 28px;
+        }
+      }
+    }
+
+    .project-page-details {
+      margin: 2em 0;
+      font-size: 20px;
+    }
+
+    .project-page-bullets {
+      font-size: 18px;
+
+      p {
+        margin-block-end: 0.2em;
+        margin-block-start: 0em;
+      }
+
+      .skill {
+        font-size: 12px;
+      }
+    }
+  }
 }
 
 @include media-breakpoint-up(md) {
 
-    .project-arrow-wrapper {
-        width: 100px;
-        height: 100px;
-        .project-arrow {
-            width: 70px;
-            height: 70px;
-            line-height: 80px;
-        }
+  .project-arrow-wrapper {
+    width: 100px;
+    height: 100px;
+
+    .project-arrow {
+      width: 70px;
+      height: 70px;
+      line-height: 80px;
+    }
+  }
+
+  .project-page-content {
+    max-width: 60%;
+
+    .project-page-title {
+      font-size: 5em;
     }
 
-    .project-page-content {
-        max-width: 60%;
-        .project-page-title {
-            font-size: 5em;
-        }
-        .project-page-buttons {
-            margin-top: 1em;
-            justify-content: center;
+    .project-page-buttons {
+      margin-top: 1em;
+      justify-content: center;
 
-            a {
-                width: 5em;
+      a {
+        width: 5em;
 
-                .project-page-button {
-                    font-size: 1em;
-                    height: 38px;
-                }
-            }
+        .project-page-button {
+          font-size: 1em;
+          height: 38px;
         }
-        .project-page-details {
-            margin: 3em 0;
-        }
-        .project-tags {
-            .skills {
-                margin-left: 1em;
-            }
-        }
+      }
     }
+
+    .project-page-details {
+      margin: 3em 0;
+    }
+
+    .project-tags {
+      .skills {
+        margin-left: 1em;
+      }
+    }
+  }
 }
 
 body {
-    background: #36373a;
+  background: #36373a;
 }
+
 .project-page {
-    .project-page-wrapper {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        text-align: center;
-        margin: 80px auto;
-        .project-arrow-wrapper {
-            border-radius: 50%;
-            //align-self: center;
-            margin-top: 40vh;
-            background: #2b29294a;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            cursor: pointer;
-            &:hover {
-                background: #2B08080E;
-            }
-            .project-arrow {
-                background: white;
-                -webkit-mask-image: url(../icons/next.svg);
-                mask-image: url(../icons/next.svg);
-                -webkit-mask-repeat: no-repeat;
-                -webkit-mask-size: contain;
-                display: inline-block;
-                margin: auto;
+  .project-page-wrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+    margin: 80px auto;
 
-                svg {
-                    vertical-align: middle;
-                    color: white;
-                }
-            }
+    .project-arrow-wrapper {
+      border-radius: 50%;
+      //align-self: center;
+      margin-top: 40vh;
+      background: #2b29294a;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      cursor: pointer;
 
-            .project-prev-arrow {
-                transform: rotate(90deg);
-                mask-position: center;
-            }
+      &:hover {
+        background: #2B08080E;
+      }
 
-            .project-next-arrow {
-                transform: rotate(-90deg);
-                mask-position: center;
-            }
+      .project-arrow {
+        background: white;
+        -webkit-mask-image: url(../icons/next.svg);
+        mask-image: url(../icons/next.svg);
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-size: contain;
+        display: inline-block;
+        margin: auto;
+
+        svg {
+          vertical-align: middle;
+          color: white;
         }
-        .project-page-content {
-            font-size: 1.7em;
-            font-weight: 300;
-            color: white;
-            .project-tags {
-                .skills {
-                    color: black;
-                    display: inline-flex;
-                    justify-content: left;
+      }
 
-                    .skill-wrapper {
-                        margin-bottom: 0;
-                    }
-                }
-        }
+      .project-prev-arrow {
+        transform: rotate(90deg);
+        mask-position: center;
+      }
 
-            .project-page-title {
-                color: white;
-                margin-block-end: 0;
-                margin-block-start: 0.3em;
-                line-height: 1em;
-            }
-            .project-page-buttons {
-                display: flex;
-                a {
-                    text-decoration: none;
-                    color: white;
-
-                    .project-page-button {
-                        text-decoration: none;
-                        box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.16);
-                        background-color: black;
-                        border-radius: 30px;
-                        font-weight: 400;
-                        font-stretch: normal;
-                        font-style: normal;
-                        line-height: 50px;
-                        position: relative;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        padding: 0 0.5em;
-                        margin: 0 1%;
-
-                        svg {
-                            margin-right: 4%;
-                        }
-                    }
-                }
-            }
-            .project-page-details {
-                font-weight: 300;
-                text-align: justify;
-
-            }
-            .project-page-bullets {
-                text-align: left;
-                margin-block-start: 2em;
-                margin-block-end: 2em;
-            }
-        }
+      .project-next-arrow {
+        transform: rotate(-90deg);
+        mask-position: center;
+      }
     }
+
+    .project-page-content {
+      font-size: 1.7em;
+      font-weight: 300;
+      color: white;
+
+      .project-tags {
+        .skills {
+          color: black;
+          display: inline-flex;
+          justify-content: left;
+
+          .skill-wrapper {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      .project-page-title {
+        color: white;
+        margin-block-end: 0;
+        margin-block-start: 0.3em;
+        line-height: 1em;
+      }
+
+      .project-page-buttons {
+        display: flex;
+
+        a {
+          text-decoration: none;
+          color: white;
+
+          .project-page-button {
+            text-decoration: none;
+            box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.16);
+            background-color: black;
+            border-radius: 30px;
+            font-weight: 400;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 50px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 0.5em;
+            margin: 0 1%;
+
+            svg {
+              margin-right: 4%;
+            }
+          }
+        }
+      }
+
+      .project-page-details {
+        font-weight: 300;
+        text-align: justify;
+
+      }
+
+      .project-page-bullets {
+        text-align: left;
+        margin-block-start: 2em;
+        margin-block-end: 2em;
+      }
+    }
+  }
 }
