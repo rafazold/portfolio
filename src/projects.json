@@ -1,11 +1,11 @@
 {
-    "sort": ["covid", "instaclone", "sentinel", "bezeq"],
+    "sort": ["looneycam","weatherapp","covid", "instaclone", "sentinel", "bezeq"],
     "projects": {
         "covid": {
             "id": "covid",
             "name": "Covid 19",
             "image": "assets/covidnineteen.png",
-            "url": "https://covidnineteen.today",
+            "url": "https://outbreak-9e38c.web.app/",
             "repo": "https://github.com/rafazold/outbreak",
             "frontTags": [
                 "HTML 5",
@@ -46,6 +46,67 @@
                 "zoomable map with tooltips and colors",
                 "timeline graph with statistics per country",
                 "server with endpoints for statistics and news"
+            ]
+        },
+        "looneycam": {
+            "id": "looneycam",
+            "name": "Looney-Cam",
+            "image": "assets/looneycam.png",
+            "url": "https://play.google.com/store/apps/details?id=com.looneycam.looneycam",
+            "repo": "https://github.com/rafazold/googly-eyes",
+            "frontTags": [
+                "Flutter",
+                "Git"
+            ],
+            "backTags": [
+            ],
+            "libraries": [
+                "Flutter",
+                "video_player",
+                "ffmpeg",
+                "firebase"
+            ],
+            "summary": "LooneyCam is a project that takes a regular image and adds to it funny eyes. You can also add a text or voice message and send it to your contacts using your favorite sharing app.",
+            "features": [
+                "available to download from google play store",
+                "image storage in device",
+                "share using native channels",
+                "add customized text",
+                "add customized audio",
+                "code supported for android and ios devices",
+                "responsive"
+            ]
+        },
+"weatherapp": {
+            "id": "weatherapp",
+            "name": "Weather App",
+            "image": "assets/weather-app.png",
+            "url": "https://rafa-weather.netlify.app/",
+            "repo": "https://github.com/rafazold/googly-eyes",
+            "frontTags": [
+                "React",
+                "React-router",
+                "Redux",
+                "webpack 5",
+                "Tailwindcss",
+                "Git"
+            ],
+            "backTags": [
+            ],
+            "libraries": [
+                "thunky",
+                "react-select",
+                "axios",
+                "toast"
+            ],
+            "summary": "A weather app built with React, Redux, and a customized webpack setup. Connects to the API of Accuweather and shows the weather for any city in the world.",
+            "features": [
+                "auto-detect and fetch weather for your current city",
+                "save in local storage your favorite cities",
+                "display favorite cities in separate route",
+                "link to city 5 day forecast upon click",
+                "dark mode with toggle",
+                "responsive design"
             ]
         },
         "instaclone": {

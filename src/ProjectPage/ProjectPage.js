@@ -14,7 +14,6 @@ const ProjectPage = () => {
     const project = data.projects[id];
     const projectsArr = data.sort;
     let history = useHistory();
-
     const getRoute = (direction) => {
         return projectsArr[getNextPage(projectsArr, direction)];
     }
@@ -81,16 +80,16 @@ const ProjectPage = () => {
                                 </p>
                             </li> : null}
                             {project.frontTags.length ? <li>
-                                <p className="project-tags">
+                                <div className="project-tags">
                                     <strong>Frontend tech stack</strong>:
                                     <Tags skills={project.frontTags}/>
-                                </p>
+                                </div>
                             </li> : null}
                             {project.backTags.length ? <li>
-                                <p className="project-tags">
+                                <div className="project-tags">
                                     <strong>Backend tech stack</strong>:
                                     <Tags skills={project.backTags}/>
-                                </p>
+                                </div>
                             </li> : null}
                         </ul>
                     </Swipeable>
