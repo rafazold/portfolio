@@ -43,12 +43,18 @@
 .project-wrapper {
   margin-bottom: 3%;
   position: relative;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+.image-wrapper {
+  height: 100%;
   .project-image {
     border-radius: 13px;
     border: solid 8px #363538;
+    object-fit: cover;
+    object-position: left top;
   }
-
+}
   .project-footer {
     display: flex;
     justify-content: space-between;
