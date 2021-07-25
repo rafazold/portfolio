@@ -1,5 +1,6 @@
 {
   "sort": [
+    "night-palette",
     "looneycam",
     "weatherapp",
     "covid",
@@ -8,6 +9,34 @@
     "bezeq"
   ],
   "projects": {
+    "night-palette": {
+      "id": "night-palette",
+      "name": "Night Palette",
+      "image": "assets/night-palette.png",
+      "url": "https://nightpalette.com/",
+      "repo": "",
+      "frontTags": [
+        "HTML 5",
+        "Webpack 5",
+        "Tailwindcss",
+        "Javascript",
+        "ES6",
+        "React",
+        "Git"
+      ],
+      "backTags": ["firebase: auth, firestore realtime database, functions, hosting"],
+      "libraries": [
+        "React",
+        "Toastify",
+        "Tailwindcss"
+      ],
+      "summary": "Dark Mode Color Palettes for Designers and Artists",
+      "features": [
+        "responsive",
+        "real time updates",
+        "light-weight app, scalable, with very fast load times"
+      ]
+    },
     "covid": {
       "id": "covid",
       "name": "Covid 19",

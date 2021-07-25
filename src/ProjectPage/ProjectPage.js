@@ -49,7 +49,6 @@ const ProjectPage = () => {
             className="project-prev-arrow project-arrow"
             onClick={() => swipe('prev')}
           >
-            {' '}
           </span>
         </span>
         <div className="project-page-content">
@@ -59,12 +58,12 @@ const ProjectPage = () => {
           >
             <h2 className="project-page-title">{project.name}</h2>
             <div className="project-page-buttons">
-              <a href={project.repo} target="_blank" rel="noreferrer noopener">
-                <span className="project-page-button">
+              {project.repo !== '' && <a href={project.repo} target='_blank' rel='noreferrer noopener'>
+                <span className='project-page-button'>
                   <AiOutlineCode />
                   Repo
                 </span>
-              </a>
+              </a>}
               <a href={project.url} target="_blank" rel="noreferrer noopener">
                 <span className="project-page-button">
                   <GoHome />
