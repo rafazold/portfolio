@@ -14,7 +14,7 @@
       "name": "Night Palette",
       "image": "assets/night-palette.png",
       "url": "https://nightpalette.com/",
-      "repo": "",
+      "repo": "https://github.com/rafazold/night-palette",
       "frontTags": [
         "HTML 5",
         "Webpack 5",

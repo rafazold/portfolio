@@ -54,9 +54,7 @@
   }
 
   .next-page {
-    margin-top: 2em;
-    margin-bottom: 5em;
-
+    padding: 5em 0;
     .down-arrow {
       height: 0.8em;
     }
@@ -117,7 +115,7 @@
   }
 
   .profile-picture-wrapper {
-    margin-top: 10em;
+    margin-top: 7em;
     margin-bottom: 4em;
     width: 12em;
     height: 12em;
@@ -127,7 +125,6 @@
 
     .homepage-title {
       font-size: 120px;
-      margin-top: -0.4em;
     }
 
     .homepage-summary {
@@ -137,11 +134,13 @@
   }
 
   .next-page {
-    margin-top: 6em;
-    margin-bottom: 14em;
-
+    padding: 7em 0 5em;
     .projects-link {
       font-size: 20px;
+    }
+    .down-arrow {
+      height: 0.8em;
+
     }
   }
 
@@ -167,6 +166,15 @@
     }
   }
 
+}
+
+@media (min-width: 1600px) {
+  .next-page {
+    padding: 12em 0 7em;
+  }
+  .profile-picture-wrapper {
+    margin: 8em 0 0;
+  }
 }
 
 .hide-back-home {
@@ -225,7 +233,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 10;
+  background-image: url("/assets/wave-hp.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .homepage-footer {

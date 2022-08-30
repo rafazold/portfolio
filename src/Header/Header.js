@@ -14,13 +14,13 @@ const Header = () => {
           </span>
         </Link>
         {location.pathname.length > 1 ? (
-          <Link to={'/'}>
-            <span className="back-home">
-              <img
-                className="back-home-arrow"
-                src={`${process.env.PUBLIC_URL}/assets/back-arrow.svg`}
-                alt="back-arrow"
-              />
+          <Link to={'/'} className='back-home'>
+            <img
+              className="back-home-arrow"
+              src={`${process.env.PUBLIC_URL}/assets/back-arrow.svg`}
+              alt="back-arrow"
+            />
+            <span>
               Back Home
             </span>
           </Link>
