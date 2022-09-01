@@ -102,7 +102,7 @@
       "name": "Weather App",
       "image": "assets/weather-app.png",
       "url": "https://rafa-weather.netlify.app/",
-      "repo": "https://github.com/rafazold/googly-eyes",
+      "repo": "https://github.com/rafazold/redux-weather-app",
       "frontTags": [
         "React",
         "React-router",
