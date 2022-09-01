@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "firebase-tools": "^9.10.2",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "prettier": "^2.3.0",
     "url-loader": "^3.0.0"
   },
