@@ -1,5 +1,6 @@
 {
   "sort": [
+    "tweetnimage",
     "night-palette",
     "looneycam",
     "weatherapp",
@@ -9,6 +10,37 @@
     "bezeq"
   ],
   "projects": {
+    "tweetnimage": {
+      "id": "tweetnimage",
+      "name": "Tweetnimage",
+      "image": "assets/tweetnimage.png",
+      "url": "https://tweetnimage.com/",
+      "repo": "",
+      "frontTags": [
+        "Svelte",
+        "Tailwindcss",
+        "Typescript",
+        "ES6",
+        "Git"
+      ],
+      "backTags": ["firebase: auth", "firebase functions", "firestore", "google cloud build", "node JS"],
+      "libraries": [
+        "Svelte",
+        "Svelte-toast",
+        "Tailwindcss",
+        "Svelte Material UI",
+        "Stripe"
+      ],
+      "summary": "Tweetnimage uses AI to generate an image from the text of your tweet, directly posts it to Tweeter and show a gallery with all your tweets and stats. Requires login with Tweeter and have free (basic) and paid (premium) subscription",
+      "features": [
+        "AI powered",
+        "tweeter API",
+        "Stable Diffusion API",
+        "Firebase",
+        "Google Cloud",
+        "real time updates"
+      ]
+    },
     "night-palette": {
       "id": "night-palette",
       "name": "Night Palette",
@@ -24,7 +56,7 @@
         "React",
         "Git"
       ],
-      "backTags": ["firebase: auth, firestore realtime database, functions, hosting"],
+      "backTags": ["firebase auth", "firestore realtime database", "firebase functions", "firebase hosting"],
       "libraries": [
         "React",
         "Toastify",
